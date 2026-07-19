@@ -1,0 +1,15 @@
+services:
+  myapi:
+    build: . #this is similar to docker build -t myapi . | But Docker Compose does it for you. | read Dockerfile 
+    ports:
+      - "3000:3000"
+
+  mongo:
+    image: mongo #Don't build an image. Download the official MongoDB image from Docker Hub
+    ports:
+      - "27017:27017" 
+  
+  nginx:
+    image: nginx
+    ports:
+      - "80:80"
