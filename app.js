@@ -9,7 +9,7 @@ mongoose
   .catch(console.error);
 
 app.get('/', (req, res) => {
-  res.send("Hello from docker!")
+  res.send("Hello from docker2!")
 });
 
 app.get("/", (req, res) => {
